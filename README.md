@@ -22,7 +22,7 @@ GitHub: [Dev David Fernandes](https://github.com/DevDavidFernandes)
 
 <h2>📖 Referências</h2>
 
-[Curso em Vídeo - HTML5 e CSS3](https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n)
+[Curso em Vídeo](https://www.cursoemvideo.com/)
 
 [Canal do Gustavo Guanabara no YouTube](https://www.youtube.com/c/CursoemV%C3%ADdeo)
 

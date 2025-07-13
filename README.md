@@ -25,5 +25,3 @@ GitHub: [Dev David Fernandes](https://github.com/DevDavidFernandes)
 [Curso em Vídeo](https://www.cursoemvideo.com/)
 
 [Canal do Gustavo Guanabara no YouTube](https://www.youtube.com/c/CursoemV%C3%ADdeo)
-
-Sinta-se à vontade para explorar o repositório, sugerir melhorias e contribuir com feedbacks. 🚀

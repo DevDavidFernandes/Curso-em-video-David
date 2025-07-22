@@ -12,46 +12,59 @@
       Nesta frase temos um <b>termo em negrito</b> usando a tag B (não
       semântica)
     </p>
+    <!-- <b> deixa o texto em negrito, mas sem transmitir significado semântico — usado apenas para aparência visual. -->
     <p>
       Nesta frase, temos um <strong>termo em destaque</strong> usando a tag
       STRONG (semântica).
     </p>
+    <!-- <strong> deixa o texto em negrito com ênfase semântica — indica que o conteúdo é importante. -->
     <h2>Itálico / Ênfase</h2>
     <p>
       Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não
       semântica).
     </p>
+    <!-- <i> deixa o texto em itálico, apenas visualmente, sem valor semântico. -->
     <p>
       Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM
       (semântica).
     </p>
+    <!-- <em> deixa o texto em itálico com significado semântico — usado para enfatizar o conteúdo. -->
     <h2>Texto Marcado</h2>
     <p>Podemos criar <mark>um texto marcado</mark> com a tag MARK</p>
+    <!-- <mark> destaca o texto com um fundo amarelo (por padrão), como se fosse marca-texto. -->
     <h2>Texto grande e pequeno</h2>
     <p>
       Estamos criando um <big>texto grande</big> e um
       <small>texto pequeno</small>
     </p>
+    <!-- <big> aumenta ligeiramente o tamanho da fonte. OBS: essa tag está obsoleta no HTML5. -->
+    <!-- <small> reduz o tamanho da fonte. Ainda é válida e usada para avisos, observações etc. -->
     <h2>Texto deletado</h2>
     <p>
       podemos marcar <del>um texto como excluido</del> para indicar que ele deve
       ser lido, mas não considerado.
     </p>
+    <!-- <del> indica que o texto foi removido ou está obsoleto. É exibido com um risco no meio. -->
     <h2>Texto inserido</h2>
     <p>
       Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e
       indecar que ele foi adicionado depos.
     </p>
+    <!-- <ins> marca texto que foi inserido posteriormente. É exibido sublinhado. -->
     <p>Existe também o <u>sublinhado</u> com a tag U (não semântica).</p>
+    <!-- <u> sublinha o texto, mas sem valor semântico — usado apenas para aparência. -->
     <h2>Texto sobrescrito</h2>
     <p>Para inserir coisas do tipo x<sup>2</sup>+3</p>
+    <!-- <sup> transforma o texto em sobrescrito (acima da linha). Ex: expoentes. -->
     <h2>Texto subscrito</h2>
     <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    <!-- <sub> transforma o texto em subscrito (abaixo da linha). Ex: fórmulas químicas. -->
     <h2>Código-fonte / Pré-formatação</h2>
     <p>
       O comando <code>document.getElementById('teste')</code> é escrito em
       linguagem JS
     </p>
+    <!-- <code> representa um trecho de código. Usa fonte monoespaçada para facilitar a leitura. -->
     <pre>
       <code>
 num = int(input('Digite um número'))
@@ -61,19 +74,27 @@ else:
   print(f'O número {num} é IMPAR')
 print('Fim do programa')
       </code>
+      <!-- <code> representa um trecho de código. Usa fonte monoespaçada para facilitar a leitura. -->
     </pre>
+    <!-- <pre> preserva espaços e quebras de linha exatamente como digitado no código-fonte. 
+     Muito útil para exibir blocos de código com formatação. -->
     <h2>Citações simples</h2>
     <p>
       Como diria um grande mestre: <q>o computador é um burro muito rápido.</q>
     </p>
+    <!-- <q> define uma citação curta. O navegador adiciona aspas automaticamente ao redor do conteúdo. -->
+
     <h2>Citações completas</h2>
     <blockquote cite="www.exemplo.com">
       o computador é um burro muito rápido.
     </blockquote>
+    <!-- <blockquote> define uma citação longa. Geralmente aparece com indentação. 
+     O atributo "cite" pode indicar a fonte da citação. -->
     <h2>Abreviações</h2>
     <p>
       Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e
       <abbr title="Cascading Style Sheets">CSS</abbr>.
     </p>
+    <!-- <abbr> define uma abreviação. O atributo "title" mostra o significado ao passar o mouse sobre o texto. -->
   </body>
 </html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<!-- Define que este documento é um HTML5 -->
+
+<html lang="pt-br">
+<!-- Elemento raiz do documento. O atributo lang="pt-br" define o idioma principal como português do Brasil -->
+
+  <head>
+    <!-- Cabeçalho do documento, contém metadados e informações que não são exibidas diretamente na página -->
+
+    <meta charset="UTF-8" />
+    <!-- Define o conjunto de caracteres como UTF-8, permitindo acentuação e símbolos corretamente -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Torna a visualização responsiva, ajustando a largura da página ao tamanho da tela do dispositivo -->
+
+    <title>Listas</title>
+    <!-- Título da aba do navegador -->
+  </head>
+
+  <body>
+    <!-- Corpo da página, onde ficam os conteúdos visíveis para o usuário -->
+
+    <h1>Trabalhando com listas</h1>
+    <!-- h1 é o título principal da página, usado para marcar importância semântica -->
+
+    <h2>Listas ordenadas</h2>
+    <!-- h2 é um subtítulo, hierarquicamente abaixo de h1 -->
+
+    <ol type="A" start="1">
+      <!-- <ol> cria uma lista ordenada. 
+           O atributo type="A" define que os itens serão marcados com letras maiúsculas (A, B, C...).
+           O atributo start="1" define o ponto de início da contagem (poderia ser "3" para começar do C, por exemplo). -->
+      <li>Item 1</li>
+      <!-- <li> define um item de lista -->
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+
+    <h2>Listas não ordenadas</h2>
+
+    <ul type="square">
+      <!-- <ul> cria uma lista não ordenada (com marcadores ao invés de números ou letras).
+           O atributo type="square" define que o marcador será um quadrado sólido.-->
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <h2>Listas mistas</h2>
+    <ol>
+      <li>Item 1</li>
+      <ul>
+        <li>Sub item 1</li>
+        <li>Sub item 2</li>
+      </ul>
+      <li>Item 2</li>
+      <ul>
+        <li>Sub item 1</li>
+        <li>Sub item 2</li>
+      </ul>
+      <li>Item 3</li>
+      <ul>
+        <li>Sub item 1</li>
+        <li>Sub item 2</li>
+      </ul>
+    </ol>
+
+    <h2>Listas de definições</h2>
+    <dl>
+      <!-- <dl> define uma lista de definição, usada para pares de termos e descrições -->
+
+      <dt>Item 1</dt>
+      <!-- <dt> define o termo (ex: nome, conceito) -->
+
+      <dd>Descrição do item 1</dd>
+      <!-- <dd> define a descrição do termo anterior -->
+
+      <dt>Item 2</dt>
+      <dd>Descrição do item 2</dd>
+
+      <dt>Item 3</dt>
+      <dd>Descrição do item 3</dd>
+    </dl>
+
+  </body>
+</html>

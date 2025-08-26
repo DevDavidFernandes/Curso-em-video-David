@@ -1,34 +1,81 @@
 <!DOCTYPE html>
+<!-- Define que o documento segue o padrão HTML5 -->
+
 <html lang="pt-br">
+  <!-- Elemento raiz do documento, com idioma definido como português do Brasil -->
+
   <head>
     <meta charset="UTF-8" />
+    <!-- Define o conjunto de caracteres para UTF-8 -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajusta a página para ser responsiva conforme a tela do dispositivo -->
+
     <title>Links</title>
+    <!-- Título exibido na aba do navegador -->
   </head>
+
   <body>
     <h1>Trabalhando com links</h1>
+
     <hr />
+    <!-- <hr> cria uma linha horizontal usada para separar seções -->
+
     <h2>Usando links externos</h2>
     <p>
       Links externos é quando utilizamos a tag A com um link de fora do seu
       site. Como por exemplo,
-      <a href="https://github.com/DevDavidFernandes" target="_blank"
-        >meu repositório Git</a
-      >
+      <a href="https://github.com/DevDavidFernandes" target="_blank">
+        <!-- <a> define um hiperlink.
+             href="URL" indica o destino do link.
+             target="_blank" faz o link abrir em uma nova aba/janela do navegador. -->
+        meu repositório Git
+      </a>
     </p>
     <p>
-      Lembrando que em link externo o recomendado é utilizar o "target="_blank"
+      Lembrando que em link externo o recomendado é utilizar o "target=_blank"
     </p>
+
     <hr />
+
     <h2>Usando links internos</h2>
     <p>
-      Para usar link interno, aquele que está em seu servidor não é necessário
-      usar a url completa
+      Para usar link interno, aquele que está em seu servidor, não é necessário
+      usar a URL completa.
     </p>
-    <p><a href="pag02.html" rel="next">A segunta página está aqui</a></p>
+
     <p>
-      E para usar links internos atraves de pastas precisamos colocar o caminho
-      todo, como o exemplo: <a href="src/pag03.html" target="_self">Página 3</a>
+      <a href="pag02.html" rel="next">
+        <!-- rel="next" indica semanticamente que este link leva à próxima página da sequência -->
+        A segunda página está aqui
+      </a>
     </p>
+
+    <p>
+      E para usar links internos através de pastas precisamos colocar o caminho
+      todo, como o exemplo:
+      <a href="src/pag03.html" target="_self">
+        <!-- target="_self" é o valor padrão; abre o link na mesma aba -->
+        Página 3
+      </a>
+    </p>
+
+    <h2>Links para download</h2>
+    <ul>
+      <li>
+        <a href="src/pdf/teste.pdf" download="teste.pdf" type="application/pdf">
+          <!-- download="nome.extensão" força o navegador a baixar o arquivo com o nome especificado.
+               type="application/pdf" indica ao navegador o tipo MIME do arquivo, no caso PDF. -->
+          Baixar arquivo pdf
+        </a>
+      </li>
+
+      <li>
+        <a href="src/pdf/teste.rar" download="teste.rar" type="application/zip">
+          <!-- type="application/zip" indica ao navegador que o arquivo é compactado em formato ZIP/RAR -->
+          Baixar arquivo zip
+        </a>
+      </li>
+    </ul>
   </body>
 </html>

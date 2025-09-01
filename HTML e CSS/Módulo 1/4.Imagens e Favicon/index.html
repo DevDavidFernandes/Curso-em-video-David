@@ -25,7 +25,7 @@
     <img src="img/css-200.png" alt="Logo CSS3" />
     <h2>Carregando imagens externas</h2>
     <img
-      src="https://sujeitoprogramador.com/wp-content/uploads/2021/01/js-icon.png"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcmkPFUzODydIqhR0j0Y1CAWSPDedlEM8sgQ&s"
       alt="Logo JavaScript"
     />
     <!-- 
@@ -33,5 +33,39 @@
     src="..." → especifica o caminho (local ou URL) da imagem a ser exibida.
     alt="..." → texto alternativo que aparece caso a imagem não carregue (também é importante para acessibilidade).
 -->
+
+    <h2>Imagens dinâmicas</h2>
+
+    <p>
+      Teste em dispositivos diferentes ou aumente e diminua o tamanho do seu
+      navegador
+    </p>
+
+    <picture>
+      <!-- <picture> é um container usado para oferecer várias versões da mesma imagem,
+       permitindo que o navegador escolha a mais adequada de acordo com a tela/dispositivo. -->
+
+      <source
+        media="(max-width: 750px)"
+        srcset="img/img-p.png"
+        type="image/png"
+      />
+      <!-- <source> dentro de <picture> define uma versão alternativa da imagem.
+       - media="(max-width: 750px)" aplica essa imagem se a tela tiver largura máxima de 750px (responsividade).
+       - srcset="caminho" define o arquivo da imagem a ser carregado.
+       - type="image/png" especifica o tipo MIME do arquivo, ajudando o navegador a decidir se suporta. -->
+
+      <source
+        media="(max-width: 1050px)"
+        srcset="img/img-m.png"
+        type="image/png"
+      />
+      <!-- Outra opção de imagem, usada quando a largura da tela for até 1050px. -->
+
+      <img src="img/img-g.png" alt="Imagem flexível" />
+      <!-- <img> é a imagem padrão/alternativa exibida se nenhuma condição <source> for atendida.
+       - src="caminho" indica o arquivo da imagem padrão.
+       - alt="texto" é um texto alternativo obrigatório para acessibilidade e SEO. -->
+    </picture>
   </body>
 </html>

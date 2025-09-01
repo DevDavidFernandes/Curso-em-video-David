@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Áudio em html</title>
+  </head>
+  <body>
+    <h1>Formas de colocar áudio com HTML</h1>
+    <hr />
+
+    <h2>Reproduzindo áudios</h2>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <audio src="src/midia/audio1.mp3" controls></audio>
+    <!-- <audio> insere um player de áudio na página.
+     - src="arquivo" define o caminho do áudio a ser reproduzido.
+     - controls adiciona os controles padrão do navegador (play, pause, volume etc.).
+     OBS: Esse formato é direto, mas menos flexível, pois só aceita 1 arquivo. -->
+
+    <h2>Segunda maneira</h2>
+
+    <audio controls loop autoplay>
+      <!-- Outra forma de usar <audio>, mais completa:
+       - controls → exibe controles de reprodução.
+       - loop → faz o áudio reiniciar automaticamente ao terminar.
+       - autoplay → tenta iniciar a reprodução automaticamente (nem todos navegadores permitem sem interação do usuário). -->
+
+      <source src="src/midia/audio1.mp3" type="audio/mpeg" />
+      <source src="src/midia/audio1.ogg" type="audio/ogg" />
+      <source src="src/midia/audio1.wav" type="audio/wav" />
+      <!-- <source> permite oferecer múltiplos formatos do mesmo áudio.
+       O navegador escolhe o primeiro formato que suporta.
+       - type="audio/mpeg" é o formato MP3, amplamente suportado.
+       - type="audio/ogg" é mais leve, mas não suportado em todos navegadores.
+       - type="audio/wav" tem qualidade alta, mas gera arquivos muito grandes (não recomendado para web). -->
+    </audio>
+  </body>
+</html>

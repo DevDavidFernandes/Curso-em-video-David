@@ -8,20 +8,51 @@
   <body>
     <h1>Incorporando Vídeos em HTML5</h1>
     <hr />
-    <h2>Inserindo videos hospedados localmente</h2>
-    <p>Este video está hospedado no meu propio servidor</p>
-    <video src="src/video1.mp4" width="560" controls></video>
-    <p>Segundo método</p>
-    <video
-      width="560"
-      poster="https://kennydouglas.com.br/wp-content/uploads/2023/07/Fotografia-de-paisagem-guia-comp.webp"
-      controls
-    >
-      <source src="src/video1.mp4" type="video/mp4" />
-    </video>
-    <h2>Encorporando vídeo externo</h2>
-    <p>Adicionando um vídeo do YouTube</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/D_TwGV6Qwcw?si=PKgl8A_zwUzoPUiV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<h2>Inserindo vídeos hospedados localmente</h2>
+<p>Este vídeo está hospedado no meu próprio servidor</p>
+
+<video src="src/video1.mp4" width="560" controls></video>
+<!-- <video> insere um player de vídeo no HTML.
+     - src="arquivo" define o caminho do vídeo local.
+     - width define a largura em pixels (a altura é ajustada proporcionalmente).
+     - controls exibe os controles padrão (play, pause, volume, tela cheia etc.). -->
+
+<p>Segundo método</p>
+
+<video
+  width="560"
+  poster="https://kennydouglas.com.br/wp-content/uploads/2023/07/Fotografia-de-paisagem-guia-comp.webp"
+  controls
+>
+  <!-- poster="url" define uma imagem de capa que será exibida antes do vídeo começar. -->
+
+  <source src="src/video1.mp4" type="video/mp4" />
+  <!-- <source> dentro de <video> funciona como em <audio>, permitindo múltiplos formatos para compatibilidade.
+       type="video/mp4" é o formato mais aceito nos navegadores. -->
+</video>
+
+<h2>Encorporando vídeo externo</h2>
+<p>Adicionando um vídeo do YouTube</p>
+
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/D_TwGV6Qwcw?si=PKgl8A_zwUzoPUiV" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" 
+  allowfullscreen>
+</iframe>
+<!-- <iframe> insere um conteúdo externo dentro da página (no caso, um vídeo do YouTube).
+     - width e height → definem o tamanho do player.
+     - src="URL" → link do vídeo no formato embed (próprio do YouTube).
+     - title → descrição do conteúdo, importante para acessibilidade.
+     - frameborder="0" → remove a borda do iframe.
+     - allow → lista de permissões dadas ao player (como autoplay, usar acelerômetro, tela cheia etc.).
+     - referrerpolicy → controla envio de informações do navegador ao servidor externo.
+     - allowfullscreen → permite que o vídeo seja exibido em tela cheia. -->
+
 
     
   </body>

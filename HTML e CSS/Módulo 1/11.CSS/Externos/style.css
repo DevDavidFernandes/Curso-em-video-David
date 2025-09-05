@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* @charset define a codificação de caracteres do arquivo CSS.
+   "UTF-8" garante suporte a acentuação e caracteres especiais. 
+   Tem que estar sempre na primeira linha do CSS. */
+
+body {
+  background-color: blanchedalmond;
+  /* Define a cor de fundo da página (um tom bege). */
+
+  font-family: "Times New Roman", Times, serif;
+  /* Define a família de fontes usada no texto.
+     - "Times New Roman" é a fonte preferencial.
+     - Times é a fonte de fallback se a primeira não existir.
+     - serif indica que, se nenhuma das anteriores existir, deve usar qualquer fonte serifada. */
+
+  font-size: 20px;
+  /* Define o tamanho da fonte base em 20 pixels. */
+}
+
+h1 {
+  color: tomato;
+  /* Cor do texto dos títulos <h1> em vermelho tomate. */
+
+  background-color: burlywood;
+  /* Cor de fundo dos títulos <h1> (tom de madeira clara). */
+}
+
+h2 {
+  color: sienna;
+  /* Define a cor do texto dos subtítulos <h2> em marrom terroso. */
+}
+
+p {
+  text-align: justify;
+  /* Faz os parágrafos ficarem justificados, alinhados dos dois lados. */
+}

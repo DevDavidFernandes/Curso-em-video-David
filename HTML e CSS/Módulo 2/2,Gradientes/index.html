@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento: indica que é HTML5 -->
+
+<html lang="pt-br">
+  <!-- Inicia o documento HTML e define o idioma da página -->
+
+  <head>
+    <!-- Cabeçalho: contém configurações e informações da página -->
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres (UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ajusta a página para ficar responsiva em celulares -->
+
+    <title>Gradientes</title>
+    <!-- Título exibido na aba do navegador -->
+
+    <style>
+      <!-- Tag para inserir CSS dentro do HTML -- > * {
+        height: 100%; /* O seletor * afeta todos os elementos da página */
+      }
+
+      body {
+        /* background-image: linear-gradient(...): cria um degradê linear */
+        /* radial-gradient: degradê circular */
+        /* Os comentários acima mostram variações possíveis */
+
+        background-image: linear-gradient(
+          45deg,
+          /* Ângulo do degradê */ #3198e2,
+          #6d59c0,
+          #b93590,
+          #e33f5f,
+          #fdd579
+        );
+
+        background-attachment: fixed; /* Fixa o fundo enquanto a página rola */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Corpo da página: conteúdo visível -->
+    <h1>Testando Gradientes</h1>
+  </body>
+</html>

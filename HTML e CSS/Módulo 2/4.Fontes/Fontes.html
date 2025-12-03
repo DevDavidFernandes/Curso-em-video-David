@@ -1,76 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- DOCTYPE informa ao navegador que o documento segue o padrão HTML5, garantindo interpretação moderna. -->
+
     <meta charset="UTF-8" />
+    <!-- charset define o conjunto de caracteres usado na página. UTF-8 permite acentuação e caracteres especiais sem erro. -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- viewport controla o comportamento da página em dispositivos móveis: largura igual à da tela e zoom inicial definido. -->
+
     <title>Fontes em CSS</title>
+    <!-- Título exibido na aba do navegador. -->
 
     <style>
+      /* @import permite carregar CSS externo antes do restante do estilo. Aqui importa a fonte Work Sans do Google Fonts. */
       @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+      /* @font-face registra uma fonte personalizada hospedada localmente para uso dentro da folha de estilo. */
       @font-face {
-        font-family: ;
+        font-family: "MorrisRomanBlack"; /* Nome atribuível à fonte para utilização posterior no CSS. */
         src: url("MorrisRomanBlack.otf") format("opentype"),
-          url("MorrisRomanBlack.ttf") format("truetype");
+          /* Caminho da fonte no formato OTF. */ url("MorrisRomanBlack.ttf")
+            format("truetype"); /* Caminho da fonte no formato TTF. */
 
-        /* Tipos de format()
-            - opentyé (otf)
-            - truetype (ttf)
-            - embedded-opentype
-            - truetype-aat
-            - svg */
-      }
-      body {
-        font-family: "Work Sans", sans-serif;
-        /* font-family: "Courier New", Courier, monospace; */
-        /* medidas absolutas
-        cm, mm, in, px, pt, pc
-        
-        medidas relativas
-        em, ex, rem, vw, vh, %
-
-        recomendado utilizar somente os "px e em"
+        /* Tipos reconhecidos no format():
+           - opentype (otf)
+           - truetype (ttf)
+           - embedded-opentype
+           - truetype-aat
+           - svg
         */
+      }
 
-        /* Weight (peso) width(largura) height(altura) */
+      body {
+        font-family: "Work Sans", sans-serif; /* Família padrão para todo o documento. */
 
-        font-size: 1em;
+        /* Sobre tamanhos de fonte: absolutos (cm, mm, in, px, pt, pc) e relativos (em, ex, rem, vw, vh, %). */
+        font-size: 1em; /* 1em = igual ao tamanho da fonte herdada. */
+
+        /* font-weight define o peso da fonte, variando de 100 a 900 em fontes que suportam peso variável. */
         font-weight: 900;
+
+        /* font-style configura estilo tipográfico (normal, italic, oblique). */
         font-style: italic;
-        /* Lighter normal bold bolder */
       }
 
       h1 {
-        /* font-family: "Work Sans";
-        font-weight: bolder;
-        font-size: 3em;
-        font-style: italic */
-
-        /* Shorthand font
-        - Font-style -> font-weight -> font-size -> font-family */
-
+        /* Shorthand font: combina várias propriedades em uma única linha.
+           Ordem correta: style → weight → size → family.
+        */
         font: italic bolder 3em "Work Sans";
       }
 
       p {
-        font-family: "MorrisRomanBlack";
+        font-family: "MorrisRomanBlack"; /* Aplica fonte personalizada apenas aos parágrafos. */
       }
 
       .titulo {
-        text-align: center;
+        text-align: center; /* Centraliza o conteúdo textual. */
       }
 
       .sub {
-        text-align: right;
+        text-align: right; /* Alinhamento à direita. */
       }
 
       .texto {
-        text-align: justify;
-        text-indent: 20px;
+        text-align: justify; /* Ajusta o texto distribuindo-o igualmente na linha. */
+        text-indent: 20px; /* Recuo da primeira linha do parágrafo. */
       }
     </style>
   </head>
+
   <body style="font-family: Work Sans">
+    <!-- Atributo style aplica CSS inline diretamente ao elemento. Aqui reforça a família da fonte no body. -->
+
     <h1>Trabalhando com fontes</h1>
+
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, totam
       commodi! Tempore voluptatum aliquam itaque dolores quod dignissimos iste
@@ -86,11 +91,13 @@
       sapiente fugit sint sequi ea, neque laudantium quasi, repellendus at est
       et aliquid perferendis, cumque quis!
     </p>
+
     <h2>Subtitulo do exercicio</h2>
+
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, omnis
       non beatae recusandae optio aspernatur. Temporibus facere culpa veritatis
-      non assumenda placeat architecto debitis odit corporis! Error dicta sint
+      non assumenda placeat architecto debitis odit corpos! Error dicta sint
       earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
       enim a amet quos cupiditate? Aspernatur ex quis provident ipsum obcaecati
       voluptas architecto ducimus magni neque? Eaque libero inventore
@@ -99,8 +106,11 @@
       deleniti facilis et nemo nihil reiciendis quos, tempore odio enim qui
       dolor!
     </p>
+
     <h1 class="titulo">Tipos de alinhamentos</h1>
+
     <h2 class="sub">Subtitulo</h2>
+
     <p class="texto">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem eum
       aliquam quos quaerat doloremque alias natus temporibus accusantium a,

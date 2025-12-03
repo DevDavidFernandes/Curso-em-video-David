@@ -6,14 +6,21 @@
     <title>Fontes em CSS</title>
 
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+      @font-face {
+        font-family: ;
+        src: url("MorrisRomanBlack.otf") format("opentype"),
+          url("MorrisRomanBlack.ttf") format("truetype");
+
+        /* Tipos de format()
+            - opentyé (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat
+            - svg */
+      }
       body {
-        @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
-        .work-sans-<uniquifier > {
-          font-family: "Work Sans", sans-serif;
-          font-size: 100px;
-        }
-
+        font-family: "Work Sans", sans-serif;
         /* font-family: "Courier New", Courier, monospace; */
         /* medidas absolutas
         cm, mm, in, px, pt, pc
@@ -25,6 +32,40 @@
         */
 
         /* Weight (peso) width(largura) height(altura) */
+
+        font-size: 1em;
+        font-weight: 900;
+        font-style: italic;
+        /* Lighter normal bold bolder */
+      }
+
+      h1 {
+        /* font-family: "Work Sans";
+        font-weight: bolder;
+        font-size: 3em;
+        font-style: italic */
+
+        /* Shorthand font
+        - Font-style -> font-weight -> font-size -> font-family */
+
+        font: italic bolder 3em "Work Sans";
+      }
+
+      p {
+        font-family: "MorrisRomanBlack";
+      }
+
+      .titulo {
+        text-align: center;
+      }
+
+      .sub {
+        text-align: right;
+      }
+
+      .texto {
+        text-align: justify;
+        text-indent: 20px;
       }
     </style>
   </head>
@@ -57,6 +98,17 @@
       Molestiae id aliquid nobis porro quae quis, debitis aut consequatur,
       deleniti facilis et nemo nihil reiciendis quos, tempore odio enim qui
       dolor!
+    </p>
+    <h1 class="titulo">Tipos de alinhamentos</h1>
+    <h2 class="sub">Subtitulo</h2>
+    <p class="texto">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem eum
+      aliquam quos quaerat doloremque alias natus temporibus accusantium a,
+      saepe rerum, facere quo quis atque dignissimos quae mollitia possimus sed!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+      provident ullam beatae commodi, accusamus ipsa voluptas temporibus. Esse
+      non culpa quam, iure, dolor recusandae quos placeat hic nobis, distinctio
+      soluta!
     </p>
   </body>
 </html>
